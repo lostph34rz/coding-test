@@ -1,0 +1,52 @@
+.header-icon-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 991.98px) {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0 16px;
+    margin-left: -1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+
+  @media screen and (min-width: 992px) {
+    width: 72px;
+  }
+
+  svg,
+  img {
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 992px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+
+    @media screen and (min-width: 992px) {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+}
